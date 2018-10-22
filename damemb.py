@@ -155,7 +155,7 @@ def damemb(rDam, dmax, r1, r2, r3, delta, zCorona, name):
                     pdb.write("".join(st))
 
     pdb.close()
-
+    print(str(name) + ": " + str(number) + " beads have been created")
 if len(sys.argv) == 9:
     damemb(float(sys.argv[1]), float(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4]), \
     float(sys.argv[5]), float(sys.argv[6]), float(sys.argv[7]), str(sys.argv[8]))
